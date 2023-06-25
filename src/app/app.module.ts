@@ -17,6 +17,7 @@ import { SearchComponent } from './search/search.component';
 import { AddFruitComponent } from './add-fruit/add-fruit.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FruitCardComponent } from './fruit-card/fruit-card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     FruitManagerComponent,
     FruitListComponent,
     SearchComponent,
-    AddFruitComponent
+    AddFruitComponent,
+    FruitCardComponent
   ],
   imports: [
     BrowserModule,
