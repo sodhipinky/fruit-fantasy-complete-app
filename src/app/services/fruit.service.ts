@@ -14,4 +14,8 @@ export class FruitService {
   getFruits() : Observable<Fruit[]> {
     return this.httpClient.get<Fruit[]>(this.url);
   }
+
+  addFruit(fruit : Fruit) : Observable<Fruit> {
+    return this.httpClient.post<Fruit>(this.url, fruit);
+  }
 }
