@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FruitService } from '../services/fruit.service';
 import { Fruit } from '../models/fruit';
 
@@ -7,9 +7,21 @@ import { Fruit } from '../models/fruit';
   templateUrl: './fruit-manager.component.html',
   styleUrls: ['./fruit-manager.component.css']
 })
-export class FruitManagerComponent {
+export class FruitManagerComponent implements OnInit {
 
   fruits: Fruit[] = []
   constructor(private fruitService : FruitService) { }
+
+  ngOnInit(): void {
+    this.fruitService.getFruits()
+    .subscribe({
+      next: (fruits) => {
+        this.fruits = fruits
+      },
+      error: (error) => {
+        alert('Network error, please try again later.')
+      }
+    })
+  }
 
 }
