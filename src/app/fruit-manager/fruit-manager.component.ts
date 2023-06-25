@@ -41,4 +41,8 @@ export class FruitManagerComponent implements OnInit {
       })
   }
 
+  onFruitAdded(fruit: Fruit) {
+    this.fruits.push(fruit)
+    this.fruitService.getFruits().subscribe((fruits) => this.fruits = fruits)
+  }
 }
