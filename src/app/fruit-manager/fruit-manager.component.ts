@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FruitService } from '../services/fruit.service';
+import { Fruit } from '../models/fruit';
 
 @Component({
   selector: 'app-fruit-manager',
@@ -8,6 +9,7 @@ import { FruitService } from '../services/fruit.service';
 })
 export class FruitManagerComponent {
 
+  fruits: Fruit[] = []
   constructor(private fruitService : FruitService) { }
 
 }
