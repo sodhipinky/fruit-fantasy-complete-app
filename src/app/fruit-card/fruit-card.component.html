@@ -1,1 +1,11 @@
-<p>fruit-card works!</p>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            <h2>{{ currentFruit.name | uppercase }}</h2>
+        </mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="../../assets/images/{{currentFruit.name}}.png" alt="{{ currentFruit.name }}">
+    <mat-card-content>
+        <p>${{ currentFruit.price }} per {{ currentFruit.unit }}</p>
+    </mat-card-content>
+</mat-card>

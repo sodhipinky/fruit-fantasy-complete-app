@@ -1,0 +1,19 @@
+mat-card {
+    width: 250px;
+    height: 300px;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+mat-card-image {
+    background-size: cover;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
