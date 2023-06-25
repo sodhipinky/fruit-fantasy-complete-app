@@ -13,6 +13,7 @@ import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './header/header.component';
 import { FruitManagerComponent } from './fruit-manager/fruit-manager.component';
 import { FruitListComponent } from './fruit-list/fruit-list.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FruitListComponent } from './fruit-list/fruit-list.component';
     NavPanelComponent,
     HeaderComponent,
     FruitManagerComponent,
-    FruitListComponent
+    FruitListComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
