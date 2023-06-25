@@ -1,1 +1,15 @@
-<p>add-fruit works!</p>
+<div class="form-container">
+    <mat-form-field class="input-field">
+        <mat-label>Fruit Name</mat-label>
+        <input matInput type="text" [(ngModel)]="fruit.name">
+    </mat-form-field>
+    <mat-form-field class="input-field">
+        <mat-label>Fruit Price</mat-label>
+        <input matInput type="text" [(ngModel)]="fruit.price">
+    </mat-form-field>
+    <mat-form-field class="input-field">
+        <mat-label>Fruit Unit</mat-label>
+        <input matInput type="text" [(ngModel)]="fruit.unit">
+    </mat-form-field>
+    <button mat-raised-button type="button" color="primary" (click)="addFruit()">Add Fruit</button>
+</div>

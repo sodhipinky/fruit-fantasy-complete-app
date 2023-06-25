@@ -43,6 +43,7 @@ export class FruitManagerComponent implements OnInit {
 
   onFruitAdded(fruit: Fruit) {
     this.fruits.push(fruit)
+    alert('Fruit added successfully!')
     this.fruitService.getFruits().subscribe((fruits) => this.fruits = fruits)
   }
 }
