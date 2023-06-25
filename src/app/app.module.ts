@@ -14,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 import { FruitManagerComponent } from './fruit-manager/fruit-manager.component';
 import { FruitListComponent } from './fruit-list/fruit-list.component';
 import { SearchComponent } from './search/search.component';
+import { AddFruitComponent } from './add-fruit/add-fruit.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SearchComponent } from './search/search.component';
     HeaderComponent,
     FruitManagerComponent,
     FruitListComponent,
-    SearchComponent
+    SearchComponent,
+    AddFruitComponent
   ],
   imports: [
     BrowserModule,
