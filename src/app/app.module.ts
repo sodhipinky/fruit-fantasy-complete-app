@@ -12,13 +12,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './header/header.component';
 import { FruitManagerComponent } from './fruit-manager/fruit-manager.component';
+import { FruitListComponent } from './fruit-list/fruit-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavPanelComponent,
     HeaderComponent,
-    FruitManagerComponent
+    FruitManagerComponent,
+    FruitListComponent
   ],
   imports: [
     BrowserModule,
