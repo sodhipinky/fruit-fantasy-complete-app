@@ -11,12 +11,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './header/header.component';
+import { FruitManagerComponent } from './fruit-manager/fruit-manager.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavPanelComponent,
-    HeaderComponent
+    HeaderComponent,
+    FruitManagerComponent
   ],
   imports: [
     BrowserModule,
