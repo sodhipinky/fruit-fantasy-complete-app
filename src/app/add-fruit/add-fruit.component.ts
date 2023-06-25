@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { Fruit } from '../models/fruit';
 
 @Component({
   selector: 'app-add-fruit',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-fruit.component.css']
 })
 export class AddFruitComponent {
+  fruit: Fruit = {}
 
+  @Output()
+  fruitAdded = new EventEmitter<Fruit>()
 }
