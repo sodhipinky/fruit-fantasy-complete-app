@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { Fruit } from '../models/fruit';
+import { FruitService } from '../services/fruit.service';
 
 @Component({
   selector: 'app-add-fruit',
@@ -11,4 +12,6 @@ export class AddFruitComponent {
 
   @Output()
   fruitAdded = new EventEmitter<Fruit>()
+
+  constructor(private fruitService: FruitService) { }
 }
