@@ -14,4 +14,14 @@ export class AddFruitComponent {
   fruitAdded = new EventEmitter<Fruit>()
 
   constructor(private fruitService: FruitService) { }
+
+  addFruit() {
+    this.fruitService.addFruit(this.fruit).subscribe({
+      next: fruit => {
+        this.fruitAdded.emit(fruit)
+        this.fruit = {}
+      },
+      error: error => alert('Failed to add fruit due to network error!')
+    })
+  }
 }
