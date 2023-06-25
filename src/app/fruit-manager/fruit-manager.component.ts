@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FruitService } from '../services/fruit.service';
 
 @Component({
   selector: 'app-fruit-manager',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./fruit-manager.component.css']
 })
 export class FruitManagerComponent {
+
+  constructor(private fruitService : FruitService) { }
 
 }
