@@ -1,0 +1,4 @@
+.fruit-card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
