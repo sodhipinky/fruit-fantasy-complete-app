@@ -7,6 +7,7 @@ import { Fruit } from '../models/fruit';
   styleUrls: ['./fruit-card.component.css']
 })
 export class FruitCardComponent {
+  @Input()
   currentFruit: Fruit = {}
 
 }
