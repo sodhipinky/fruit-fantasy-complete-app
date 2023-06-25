@@ -1,2 +1,10 @@
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <h2>Add Fruit</h2>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <app-add-fruit (fruitAdded)="onFruitAdded($event)"></app-add-fruit>
+</mat-expansion-panel>
 <app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search>
 <app-fruit-list [fruitList]="fruits"></app-fruit-list>
