@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Fruit } from '../models/fruit';
 
 @Component({
   selector: 'app-fruit-card',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./fruit-card.component.css']
 })
 export class FruitCardComponent {
+  currentFruit: Fruit = {}
 
 }
