@@ -21,6 +21,7 @@ import { FruitCardComponent } from './fruit-card/fruit-card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { MatInputModule} from '@angular/material/input';
     MatListModule,
     MatCardModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
