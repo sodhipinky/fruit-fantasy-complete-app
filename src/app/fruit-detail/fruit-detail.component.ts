@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Fruit } from '../models/fruit';
 import { FruitService } from '../services/fruit.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-fruit-detail',
@@ -13,7 +13,8 @@ export class FruitDetailComponent implements OnInit {
 
   constructor(
     private fruitService: FruitService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -29,6 +30,7 @@ export class FruitDetailComponent implements OnInit {
     this.fruitService.editFruit(this.fruit).subscribe((fruit) => {
       this.fruit = fruit;
       alert('Fruit updated successfully!')
+      this.router.navigate(['/home'])
     })
   }
 }

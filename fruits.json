@@ -9,7 +9,7 @@
     {
       "id": 2,
       "name": "apricot",
-      "price": "8",
+      "price": "10",
       "unit": "piece"
     },
     {
@@ -21,13 +21,13 @@
     {
       "id": 4,
       "name": "dragonfruit",
-      "price": "3",
+      "price": "4",
       "unit": "piece"
     },
     {
       "id": 5,
       "name": "jackfruit",
-      "price": 4,
+      "price": "5",
       "unit": "piece"
     },
     {
