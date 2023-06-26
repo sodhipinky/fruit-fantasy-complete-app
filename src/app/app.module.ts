@@ -23,6 +23,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FruitDetailComponent } from './fruit-detail/fruit-detail.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     SearchComponent,
     AddFruitComponent,
     FruitCardComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FruitDetailComponent
   ],
   imports: [
     BrowserModule,
