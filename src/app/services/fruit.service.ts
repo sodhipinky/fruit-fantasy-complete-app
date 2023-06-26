@@ -18,4 +18,12 @@ export class FruitService {
   addFruit(fruit : Fruit) : Observable<Fruit> {
     return this.httpClient.post<Fruit>(this.url, fruit);
   }
+
+  getFruitById(id: number) : Observable<Fruit> {
+    return this.httpClient.get<Fruit>(`${this.url}/${id}`)
+  }
+
+  editFruit(fruit: Fruit) : Observable<Fruit> {
+    return this.httpClient.put<Fruit>(`${this.url}/${fruit.id}`, fruit);
+  }
 }
