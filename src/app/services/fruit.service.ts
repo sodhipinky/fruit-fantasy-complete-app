@@ -23,7 +23,7 @@ export class FruitService {
     return this.httpClient.get<Fruit>(`${this.url}/${id}`)
   }
 
-  editFruit(fruit: Fruit) : Observable<Fruit> {
-    return this.httpClient.put<Fruit>(`${this.url}/${fruit.id}`, fruit);
+  editFruit(updatedFruit: Fruit) : Observable<Fruit> {
+    return this.httpClient.put<Fruit>(`${this.url}/${updatedFruit.id}`, updatedFruit)
   }
 }
