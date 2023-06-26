@@ -26,4 +26,8 @@ export class FruitService {
   editFruit(updatedFruit: Fruit) : Observable<Fruit> {
     return this.httpClient.put<Fruit>(`${this.url}/${updatedFruit.id}`, updatedFruit)
   }
+
+  deleteFruit(id: number) : Observable<Fruit> {
+    return this.httpClient.delete<Fruit>(`${this.url}/${id}`)
+  }
 }
