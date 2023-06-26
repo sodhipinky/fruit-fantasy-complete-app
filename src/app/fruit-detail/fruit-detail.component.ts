@@ -24,4 +24,11 @@ export class FruitDetailComponent implements OnInit {
       })
     })
   }
+
+  editSelectedFruit() {
+    this.fruitService.editFruit(this.fruit).subscribe((fruit) => {
+      this.fruit = fruit;
+      alert('Fruit updated successfully!')
+    })
+  }
 }
