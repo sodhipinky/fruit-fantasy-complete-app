@@ -33,4 +33,15 @@ export class FruitDetailComponent implements OnInit {
       this.router.navigate(['/home'])
     })
   }
+
+  deleteSelectedFruit() {
+    this.activatedRoute.paramMap.subscribe((params) => {
+      let id = params.get('id') ?? 0
+      this.fruitService.deleteFruit(+id).subscribe(fruit => {
+        this.fruit = fruit
+        alert('Fruit deleted successfully!')
+        this.router.navigate(['/home'])
+      })
+    })
+  }
 }

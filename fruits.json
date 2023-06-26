@@ -19,12 +19,6 @@
       "unit": "pound"
     },
     {
-      "id": 4,
-      "name": "dragonfruit",
-      "price": "4",
-      "unit": "piece"
-    },
-    {
       "id": 5,
       "name": "jackfruit",
       "price": "5",
@@ -77,6 +71,12 @@
       "price": "5",
       "unit": "pound",
       "id": 13
+    },
+    {
+      "name": "dragonfruit",
+      "price": "5",
+      "unit": "piece",
+      "id": 14
     }
   ]
 }
