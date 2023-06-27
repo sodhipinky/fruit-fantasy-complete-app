@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-nav-panel',
@@ -16,4 +17,10 @@ export class NavPanelComponent {
       map(result => result.matches),
       shareReplay()
     );
+
+    isLoggedIn: boolean = false
+
+    onLogin($event: any) {
+      this.isLoggedIn = !($event instanceof LoginComponent)
+    }
 }

@@ -13,8 +13,8 @@
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span><app-header></app-header></span>
+      <span><app-header [loggedIn]="isLoggedIn"></app-header></span>
     </mat-toolbar>
-    <router-outlet></router-outlet>
+    <router-outlet (activate)="onLogin($event)"></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
