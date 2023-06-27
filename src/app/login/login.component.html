@@ -1,1 +1,8 @@
-<p>login works!</p>
+<div class="login-form">
+    <h2>Vendor Login</h2>
+    <mat-form-field class="input-field">
+        <mat-label>Enter Vendor Code</mat-label>
+        <input matInput name="vendor-code" [(ngModel)]="vendorCode">
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" (click)="validateVendor()">Login</button>
+</div>
