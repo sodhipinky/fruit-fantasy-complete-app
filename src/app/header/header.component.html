@@ -4,10 +4,10 @@
         <a mat-icon-button routerLink="/home">
             <mat-icon>home</mat-icon>
         </a>
-        <a mat-icon-button routerLink="/login">
+        <a *ngIf="loggedIn===false" mat-icon-button routerLink="/login">
             <mat-icon>login</mat-icon>
         </a>
-        <a mat-icon-button (click)="vendorLogout()" >
+        <a *ngIf="loggedIn===true" mat-icon-button (click)="vendorLogout()" >
             <mat-icon>logout</mat-icon>
         </a>
     </div>
