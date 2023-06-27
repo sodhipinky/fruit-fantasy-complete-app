@@ -24,6 +24,7 @@ import { MatInputModule} from '@angular/material/input';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FruitDetailComponent } from './fruit-detail/fruit-detail.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FruitDetailComponent } from './fruit-detail/fruit-detail.component';
     AddFruitComponent,
     FruitCardComponent,
     PageNotFoundComponent,
-    FruitDetailComponent
+    FruitDetailComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
