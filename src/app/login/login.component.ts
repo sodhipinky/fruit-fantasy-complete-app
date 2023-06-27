@@ -11,4 +11,6 @@ export class LoginComponent {
   constructor(
     private authenticationService: AuthenticationService,
     private router: Router) { }
+
+    vendorCode: string = '';
 }
