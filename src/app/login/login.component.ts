@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { AuthenticationService } from '../services/authentication.service';
 import { Router } from '@angular/router';
 
@@ -12,12 +12,16 @@ export class LoginComponent {
     private authenticationService: AuthenticationService,
     private router: Router) { }
 
-    vendorCode: string = '';
+  vendorCode: string = '';
 
-    validateVendor() {
-      if(this.vendorCode === 'VE1025'){
-        this.authenticationService.login();
-        this.router.navigate(['/home'])
-      }
+  @Output()
+  loggedInEvent: EventEmitter<boolean> = new EventEmitter<boolean>()
+
+  validateVendor() {
+    if (this.vendorCode === 'VE1025') {
+      this.authenticationService.login();
+      this.loggedInEvent.emit(true)
+      this.router.navigate(['/home'])
     }
+  }
 }
