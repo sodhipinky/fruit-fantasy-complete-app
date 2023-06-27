@@ -5,6 +5,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FruitDetailComponent } from './fruit-detail/fruit-detail.component';
 import { LoginComponent } from './login/login.component';
 import { authGuard } from './services/auth.guard';
+import { exitGuard } from './services/exit.guard';
 
 const routes: Routes = [
   {
@@ -15,7 +16,8 @@ const routes: Routes = [
   {
     path: 'fruit-detail/:id',
     component: FruitDetailComponent,
-    canActivate: [authGuard]
+    canActivate: [authGuard],
+    canDeactivate: [exitGuard]
   },
   {
     path: 'login',
