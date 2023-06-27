@@ -1,3 +1,14 @@
 <div class="header">
     <h1>Fruit Fantasy</h1>
+    <div class="icons">
+        <a mat-icon-button routerLink="/home">
+            <mat-icon>home</mat-icon>
+        </a>
+        <a mat-icon-button routerLink="/login">
+            <mat-icon>login</mat-icon>
+        </a>
+        <a mat-icon-button (click)="vendorLogout()" >
+            <mat-icon>logout</mat-icon>
+        </a>
+    </div>
 </div>
