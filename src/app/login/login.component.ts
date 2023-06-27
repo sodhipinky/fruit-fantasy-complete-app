@@ -13,4 +13,11 @@ export class LoginComponent {
     private router: Router) { }
 
     vendorCode: string = '';
+
+    validateVendor() {
+      if(this.vendorCode === 'VE1025'){
+        this.authenticationService.login();
+        this.router.navigate(['/home'])
+      }
+    }
 }
