@@ -23,6 +23,7 @@ export class FruitDetailComponent implements OnInit {
       let id = params.get('id') ?? 0
       this.fruitService.getFruitById(+id).subscribe((fruit) => {
         this.fruit = fruit
+        this.editStatus = false
       })
     })
   }
@@ -30,6 +31,7 @@ export class FruitDetailComponent implements OnInit {
   editSelectedFruit() {
     this.fruitService.editFruit(this.fruit).subscribe((fruit) => {
       this.fruit = fruit;
+      this.editStatus = true;
       alert('Fruit updated successfully!')
       this.router.navigate(['/home'])
     })
@@ -44,5 +46,13 @@ export class FruitDetailComponent implements OnInit {
         this.router.navigate(['/home'])
       })
     })
+  }
+
+  isEditComplete() {
+    if(this.editStatus === false) {
+      let response = confirm('The changes have not been saved. Are you sure you want to leave?')
+      return response
+    }
+    return true
   }
 }
