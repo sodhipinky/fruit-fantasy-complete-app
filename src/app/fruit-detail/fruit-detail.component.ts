@@ -10,6 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class FruitDetailComponent implements OnInit {
   fruit: Fruit = {}
+  editStatus: boolean = false
 
   constructor(
     private fruitService: FruitService,
