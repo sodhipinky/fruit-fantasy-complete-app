@@ -27,7 +27,7 @@
     {
       "id": 6,
       "name": "strawberry",
-      "price": 8,
+      "price": "10",
       "unit": "pound"
     },
     {
@@ -77,6 +77,18 @@
       "price": "5",
       "unit": "piece",
       "id": 14
+    },
+    {
+      "name": "Kiwi",
+      "price": "4",
+      "unit": "piece",
+      "id": 15
+    },
+    {
+      "name": "coconut",
+      "price": "6",
+      "unit": "piece",
+      "id": 16
     }
   ]
 }
